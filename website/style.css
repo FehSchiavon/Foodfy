@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -16,6 +16,21 @@ body {
 header {
     text-align: left;
     margin: 36px 0px;
+}
+
+header .header-menu img {
+    margin-right: 122px;
+}
+
+
+header .header-menu a {
+    text-decoration: none;
+    color: #111;
+    margin-left: 30px;
+}
+
+main {
+    max-width: 940px;
 }
 
 main .slider {
@@ -45,3 +60,33 @@ main .slider img {
     right: 100px;
     top: -170px;
 }
+
+main .info {
+    margin: 50px 0px 20px 0px;
+    font-weight: bold;
+}
+
+main section .recipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+main section .recipes .type-recipes img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+}
+
+main section .recipes .type-recipes h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main section .recipes .type-recipes p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #777;
+}
+
