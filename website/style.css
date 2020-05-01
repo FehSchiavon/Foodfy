@@ -9,8 +9,12 @@
 
 body {
     background-color: #fff;
-    margin: 0px 230px;
-    display: block;
+}
+
+body header,
+body main {
+    margin: 36px auto;
+    width: 940px;
 }
 
 header {
@@ -20,6 +24,8 @@ header {
 
 header .header-menu img {
     margin-right: 122px;
+    cursor: pointer;
+    margin-left: -30px;
 }
 
 
@@ -30,6 +36,7 @@ header .header-menu a {
 }
 
 main {
+    width: 940px;
     max-width: 940px;
 }
 
@@ -90,3 +97,80 @@ main section .recipes .type-recipes p {
     color: #777;
 }
 
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 23px;
+    margin-top: 50px;
+    width: 100%;
+    position: static;
+}
+
+footer p {
+    color: #999;
+    font-size: 14px;
+}
+
+
+/* ===ABOUT=== */
+
+header nav .header-about-border {
+    font-weight: 700;
+}
+
+main .about-foodfy h2 {
+    padding-top: 10px;
+}
+
+main .about-foodfy h3 {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+main .about-foodfy p {
+    color: #444;
+    font-size: 18px;
+    padding: 20px 0px;
+}
+
+/* === MODAL === */
+
+span .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    /* opacity: 0;
+    visibility: hidden; */
+}
+
+span .modal {
+    background-color: white;
+    width: 660px;
+    height: 413px;
+    margin: 5vh auto;
+    position: relative;
+}
+
+span .modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/* === MODAL.ACTIVE === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+} */
