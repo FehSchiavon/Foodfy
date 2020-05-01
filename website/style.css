@@ -143,34 +143,52 @@ span .modal-overlay {
     top: 0px;
     /* opacity: 0;
     visibility: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 span .modal {
     background-color: white;
     width: 660px;
     height: 413px;
-    margin: 5vh auto;
-    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-span .modal .close-modal {
-    color: black;
-    position: absolute;
-    right: 8px;
-    top: 8px;
+span .modal .close-modal img {
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 30px 0px 20px;
+}
+
+span .modal .close-modal h3 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+span .modal .close-modal p {
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    margin-top: 5px;
+}
+
+span .modal .button-close p {
+    color: #999;
+    font-size: 16px;
+    margin-top: 60px;
     cursor: pointer;
 }
 
-/* === MODAL.ACTIVE === */
+/* ===MODAL.ACTIVE===  */
 
 .modal-overlay.active {
     opacity: 1;
-    visibility: visible;
+    
 }
-
-/* iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 5%;
-} */
