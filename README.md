@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/mockup.png" />
+</div>
+
 <h3 align="center">
   Desafios Módulo 2 - Iniciando no Front-end
 </h3>
