@@ -1,15 +1,27 @@
 const modalOverlay = document.querySelector('.modal-overlay')
-const courses = document.querySelectorAll('.courses')
+const recipes = document.querySelectorAll('.type-recipes')
 
-for (let course of courses) {
-    course.addEventListener('click', function(){
-        const webCourse = course.getAttribute('id')
+
+for (let recipe of recipes) {
+    recipe.addEventListener('click', function(){
         modalOverlay.classList.add('active')
-        modalOverlay.querySelector('iframe').src = `https://rocketseat.com.br/${webCourse}`
+
+        const typeRecipesImg = recipe.getAttribute('id')
+        modalOverlay.querySelector('img').src = `../layouts/assets/${typeRecipesImg}.png`
+
+        const titleRecipes = recipe.querySelector('.whatRecipes').innerHTML
+        modalOverlay.querySelector('.titleRecipes').innerHTML = `${titleRecipes}`
+
+        const nameCreator = recipe.querySelector('.whatNameCreator').innerHTML
+        modalOverlay.querySelector('.nameCreator').innerHTML = `${nameCreator}`
+
     })
 }
 
-document.querySelector('.close-modal').addEventListener('click', function () {
+
+document.querySelector('.button-close').addEventListener('click', function () {
     modalOverlay.classList.remove('active')
-    modalOverlay.querySelector('iframe').src = ""
+    modalOverlay.querySelector('img').src = ""
+    modalOverlay.querySelector('h3').innerHTML = ""
+    modalOverlay.querySelector('p').innerHTML = ""
 })

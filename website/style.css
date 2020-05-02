@@ -83,6 +83,7 @@ main section .recipes .type-recipes img {
     width: 300px;
     height: 140px;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 main section .recipes .type-recipes h3 {
@@ -141,8 +142,8 @@ span .modal-overlay {
     height: 100%;
     position: fixed;
     top: 0px;
-    /* opacity: 0;
-    visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,5 +191,5 @@ span .modal .button-close p {
 
 .modal-overlay.active {
     opacity: 1;
-    
+    visibility: visible;
 }
