@@ -29,36 +29,40 @@
 
             <section>
                 <div class="recipes">
-                    <div class="type-recipes">
+                    <div class="type-recipes" id="burger">
                         <img src="../layouts/assets/burger.png" alt="triple burger bacon">
-                        <h3>Triplo bacon burger</h3>
-                        <p>por Jorge Relato</p>
+                        <h3 class="whatRecipes">Triplo bacon burger</h3>
+                        <p class="whatNameCreator">por Jorge Relato</p>
                     </div>
-                    <div class="type-recipes">
+
+                    <div class="type-recipes" id="pizza">
                         <img src="../layouts/assets/pizza.png" alt="pizza quatro estacoes">
-                        <h3>Pizza 4 estações</h3>
-                        <p>por Fabiana Melo</p>
+                        <h3 class="whatRecipes">Pizza 4 estações</h3>
+                        <p class="whatNameCreator">por Fabiana Melo</p>
                     </div>
-                    <div class="type-recipes">
+
+                    <div class="type-recipes" id="espaguete">
                         <img src="../layouts/assets/espaguete.png" alt="espaguete ao alho">
-                        <h3>Espaguete ao alho</h3>
-                        <p>por Júlia Kinoto</p>
+                        <h3 class="whatRecipes">Espaguete ao alho</h3>
+                        <p class="whatNameCreator">por Júlia Kinoto</p>
                     </div>
-                    <div class="type-recipes">
+
+                    <div class="type-recipes" id="lasanha">
                         <img src="../layouts/assets/lasanha.png" alt="lasanha mac n' cheese">
-                        <h3>Lasanha mac n' cheese</h3>
-                        <p>por Juliano Vieira</p>
+                        <h3 class="whatRecipes">Lasanha mac n' cheese</h3>
+                        <p class="whatNameCreator">por Juliano Vieira</p>
                     </div>
-                    <div class="type-recipes">
+
+                    <div class="type-recipes" id="doce">
                         <img src="../layouts/assets/doce.png" alt="docinhos pao do ceu">
-                        <h3>Docinhos pão-do-ceú</h3>
-                        <p>por Ricardo Golvea</p>
+                        <h3 class="whatRecipes">Docinhos pão-do-ceú</h3>
+                        <p class="whatNameCreator">por Ricardo Golvea</p>
                     </div>
-                    <div class="type-recipes">
+
+                    <div class="type-recipes" id="asinhas">
                         <img src="../layouts/assets/asinhas.png" alt="asinhas de frango ao barbecue">
-                        <h3>Asinhas de frango ao barbecue</h3>
-                        <p>por Vania Steroski</p>
-                    </div>
+                        <h3 class="whatRecipes">Asinhas de frango ao barbecue</h3>
+                        <p class="whatNameCreator">por Vania Steroski</p>
                 </div>
             </section>
         </main>
@@ -66,6 +70,24 @@
         <footer>
             <p>Todos direitos reservados, receitas Foodfy</p>
         </footer>
+
+        <span>
+            <div class="modal-overlay">
+                <div class="modal">
+
+                    <div class="close-modal">
+                        <img src="" alt="img-recipes">
+                        <h3 class="titleRecipes"></h3>
+                        <p class="nameCreator"></p>
+                    </div>
+
+                    <div class="button-close">
+                        <p>Fechar modal</p>
+                    </div>
+                </div>
+            </div>    
+        </span>
+
         <script src="script.js"></script>
     </body>
 </html>

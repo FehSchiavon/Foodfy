@@ -22,6 +22,6 @@ for (let recipe of recipes) {
 document.querySelector('.button-close').addEventListener('click', function () {
     modalOverlay.classList.remove('active')
     modalOverlay.querySelector('img').src = ""
-    modalOverlay.querySelector('h3').innerHTML = ""
-    modalOverlay.querySelector('p').innerHTML = ""
+    modalOverlay.querySelector('.titleRecipes').innerHTML = ""
+    modalOverlay.querySelector('.nameCreator').innerHTML = ""
 })
